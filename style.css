@@ -213,7 +213,7 @@ body.dark #moon{
     margin-right: 10px;
 }
 i{
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .social_icons{
@@ -232,6 +232,7 @@ i{
     border-radius: 50%;
     box-shadow: 0px 1px 5px 3px #8749f2;
     cursor: pointer;
+    z-index: 0.5;
 }
 .icon_circle{
     position: absolute;
@@ -240,6 +241,7 @@ i{
     height: 40px;
     border-radius: 50px;
     animation: iconSlide 4s infinite alternate;
+    z-index: -1;
 }
 
 @keyframes iconSlide {
