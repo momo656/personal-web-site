@@ -1,7 +1,8 @@
 function myMenuFunction(){
+    console.log('ok')
     var menuBtn = document.getElementById('myNavMenu');
     if (menuBtn.className === 'nav-menu'){
-        menuBtn.className+= 'responsive';
+        menuBtn.className+=   '  responsive';
     }else{
         menuBtn.className = "nav-menu";
     }
@@ -12,25 +13,18 @@ toggleswitch.addEventListener("click" , ()=>{
     body.classList.toggle('dark')
 })
 
-// var typingEffect = new typed(".typedText", {
-//     Strings: ["Designer", "Coder", "Developer"],
-//     loop: true,
-//     typeSpeed: 100,
-//     backSpeed: 80,
-//     backDelay: 2000,
-// })
 var typingEffect = new Typed(".typedText", {
     strings: ["Designer", "Coder", "Developer"],
     loop: true,
     typeSpeed: 100,
     backSpeed: 80,
-    backDelay: 2000,
+    backDelay: 400,
 
 })
 const sr = ScrollReveal({
     orgigin: "top",
     distance: "80px",
-    duration: 2000,
+    duration: 400,
     reset: true,
 });
 sr.reveal(".featured-name", {delay:100});
@@ -46,7 +40,7 @@ sr.reveal(".top-header", {});
 const srLeft = ScrollReveal({
     orgigin: "top",
     distance: "80px",
-    duration: 2000,
+    duration: 400,
     reset: true,
 });
 
@@ -56,7 +50,7 @@ srLeft.reveal(".contact-info", {delay:100});
 const srRight = ScrollReveal({
     orgigin: "top",
     distance: "80px",
-    duration: 2000,
+    duration: 400,
     reset: true,
 });
 srRight.reveal(".skill", {delay:100});
